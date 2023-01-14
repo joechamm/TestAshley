@@ -1,0 +1,1691 @@
+{
+"BitmapFont": {
+	"large-br": {
+		"file": "large-br.fnt"
+	},
+	"large-br-brd-shd": {
+		"file": "large-br-brd-shd.fnt"
+	},
+	"large-eth": {
+		"file": "large-eth.fnt"
+	},
+	"large-ethit-brd-shd": {
+		"file": "large-ethit-brd-shd.fnt"
+	},
+	"med-br": {
+		"file": "med-br.fnt"
+	},
+	"med-br-brd-shd": {
+		"file": "med-br-brd-shd.fnt"
+	},
+	"med-eth": {
+		"file": "med-eth.fnt"
+	},
+	"med-ethit-brd-shd": {
+		"file": "med-ethit-brd-shd.fnt"
+	},
+	"small-br": {
+		"file": "small-br.fnt"
+	},
+	"small-br-brd-shd": {
+		"file": "small-br-brd-shd.fnt"
+	},
+	"small-eth": {
+		"file": "small-eth.fnt"
+	},
+	"small-ethit-brd-shd": {
+		"file": "small-ethit-brd-shd.fnt"
+	},
+	"subtitle-br": {
+		"file": "subtitle-br.fnt"
+	},
+	"subtitle-br-brd-shd": {
+		"file": "subtitle-br-brd-shd.fnt"
+	},
+	"subtitle-ethit-brd-shd": {
+		"file": "subtitle-ethit-brd-shd.fnt"
+	},
+	"tiny-br": {
+		"file": "tiny-br.fnt"
+	},
+	"tiny-eth": {
+		"file": "tiny-eth.fnt"
+	},
+	"title-br": {
+		"file": "title-br.fnt"
+	},
+	"title-br-brd-shd": {
+		"file": "title-br-brd-shd.fnt"
+	},
+	"title-ethit-brd-shd": {
+		"file": "title-ethit-brd-shd.fnt"
+	}
+},
+"Color": {
+	"Black": {
+		"hex": "000000ff"
+	},
+	"Clear": {
+		"hex": "00000000"
+	},
+	"DiscWarsBlueDark": {
+		"hex": "0c141bff"
+	},
+	"DiscWarsBrownDark": {
+		"hex": "1f0e07ff"
+	},
+	"DiscWarsOrange": {
+		"hex": "cf5a24ff"
+	},
+	"DiscWarsTan": {
+		"hex": "b4703cff"
+	},
+	"DiscWarsYellow": {
+		"hex": "fafcb2ff"
+	},
+	"EndOfLineBlueGray": {
+		"hex": "467b9aff"
+	},
+	"EndOfLineBlueGrayDark": {
+		"hex": "39516aff"
+	},
+	"EndOfLineBlueVeryDark": {
+		"hex": "111720ff"
+	},
+	"EndOfLineBlueVeryLight": {
+		"hex": "e2fdfeff"
+	},
+	"EndOfLineOrange": {
+		"hex": "c5501fff"
+	},
+	"FlynnsArcadeBlueLight": {
+		"hex": "7dbbd6ff"
+	},
+	"FlynnsArcadeGray": {
+		"hex": "3c3b37ff"
+	},
+	"FlynnsArcadeGrayVeryLight": {
+		"hex": "e0e1d8ff"
+	},
+	"FlynnsArcadeTanLight": {
+		"hex": "e4c076ff"
+	},
+	"FlynnsArcadeTanVeryLight": {
+		"hex": "dfda87ff"
+	},
+	"Gray": {
+		"hex": "4d4d4dff"
+	},
+	"GrayDark": {
+		"hex": "333333ff"
+	},
+	"GrayLight": {
+		"hex": "666666ff"
+	},
+	"GrayMidLight": {
+		"hex": "808080ff"
+	},
+	"GrayUltraLight": {
+		"hex": "e6e6e6ff"
+	},
+	"GrayVeryDark": {
+		"hex": "1a1a1aff"
+	},
+	"GrayVeryLight": {
+		"hex": "b3b3b3ff"
+	},
+	"SafehouseBlueDark": {
+		"hex": "14202fff"
+	},
+	"SafehouseBlueLight": {
+		"hex": "78add4ff"
+	},
+	"SafehouseBlueMid": {
+		"hex": "3c86ccff"
+	},
+	"SafehouseBlueVeryLight": {
+		"hex": "bee9feff"
+	},
+	"White": {
+		"hex": "ffffffff"
+	}
+},
+"TintedDrawable": {
+	"circle_wh_19-bl": {
+		"name": "circle_wh_19",
+		"color": "SafehouseBlueMid"
+	},
+	"circle_wh_19-dkbl": {
+		"name": "circle_wh_19",
+		"color": "SafehouseBlueDark"
+	},
+	"circle_wh_19-gr": {
+		"name": "circle_wh_19",
+		"color": "Gray"
+	},
+	"circle_wh_19-ltbl": {
+		"name": "circle_wh_19",
+		"color": "SafehouseBlueLight"
+	},
+	"progress-bar-bl-01-full": {
+		"name": "progress-bar-cl-01-full",
+		"color": "SafehouseBlueMid"
+	},
+	"progress-bar-bl-01-empty": {
+		"name": "progress-bar-cl-01-empty",
+		"color": "SafehouseBlueMid",
+		"minWidth": 277,
+		"minHeight": 47
+	},
+	"minus-bl": {
+		"name": "minus",
+		"color": "SafehouseBlueMid"
+	},
+	"plus-bl": {
+		"name": "plus",
+		"color": "SafehouseBlueMid"
+	},
+	"plus-ltbl": {
+		"name": "plus",
+		"color": "SafehouseBlueLight"
+	},
+	"minus-ltbl": {
+		"name": "minus",
+		"color": "SafehouseBlueLight"
+	},
+	"slider-simple-knob": {
+		"name": "white-pixel",
+		"color": "SafehouseBlueMid",
+		"minWidth": 5,
+		"minHeight": 20
+	},
+	"slider-simple-background": {
+		"name": "white-pixel",
+		"color": "Gray",
+		"minWidth": 200,
+		"minHeight": 2
+	},
+	"slider-simple-vertical-background": {
+		"name": "white-pixel",
+		"color": "Gray",
+		"minWidth": 2,
+		"minHeight": 200
+	},
+	"slider-simple-vertical-knob": {
+		"name": "white-pixel",
+		"color": "SafehouseBlueMid",
+		"minWidth": 20,
+		"minHeight": 5
+	},
+	"scroll-bar-horizontal": {
+		"name": "white-pixel",
+		"color": "GrayVeryLight",
+		"minWidth": 50,
+		"minHeight": 4
+	},
+	"scroll-bar-horizontal-knob": {
+		"name": "white-pixel",
+		"color": "SafehouseBlueMid",
+		"minWidth": 1,
+		"minHeight": 4
+	},
+	"scroll-bar-vertical": {
+		"name": "white-pixel",
+		"color": "GrayVeryLight",
+		"minWidth": 4,
+		"minHeight": 50
+	},
+	"scroll-bar-vertical-knob": {
+		"name": "white-pixel",
+		"color": "SafehouseBlueMid",
+		"minWidth": 4,
+		"minHeight": 1
+	},
+	"progress-simple-knob": {
+		"name": "white-pixel",
+		"color": "SafehouseBlueMid",
+		"minWidth": 1,
+		"minHeight": 2
+	},
+	"progress-simple-vertical-knob": {
+		"name": "white-pixel",
+		"color": "SafehouseBlueMid",
+		"minWidth": 2,
+		"minHeight": 1
+	}
+},
+"TiledDrawable": {
+	"progress-bar-bl-01-empty-tiled": {
+		"region": "progress-bar-cl-01-empty",
+		"color": "SafehouseBlueMid",
+		"minWidth": 277,
+		"minHeight": 47
+	},
+	"progress-bar-bl-01-full-tiled": {
+		"region": "progress-bar-cl-01-full",
+		"color": "SafehouseBlueMid",
+		"minWidth": 277,
+		"minHeight": 47
+	}
+},
+"com.ray3k.tenpatch.TenPatchDrawable": {
+	"square_wh_21-10-bl": {
+		"region": "square_wh_21",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 15, 29 ],
+		"verticalStretchAreas": [ 7, 37 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_21-10-gr": {
+		"region": "square_wh_21",
+		"color": "Gray",
+		"horizontalStretchAreas": [ 15, 29 ],
+		"verticalStretchAreas": [ 7, 37 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_21-10-dkbl": {
+		"region": "square_wh_21",
+		"color": "SafehouseBlueDark",
+		"horizontalStretchAreas": [ 15, 29 ],
+		"verticalStretchAreas": [ 7, 37 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_21-10-ltbl": {
+		"region": "square_wh_21",
+		"color": "SafehouseBlueLight",
+		"horizontalStretchAreas": [ 15, 29 ],
+		"verticalStretchAreas": [ 7, 37 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_18-10": {
+		"region": "square_wh_18",
+		"horizontalStretchAreas": [ 12, 32 ],
+		"verticalStretchAreas": [ 13, 33 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_18-10-bl": {
+		"region": "square_wh_18",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 12, 32 ],
+		"verticalStretchAreas": [ 13, 33 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_07-10-bl": {
+		"region": "square_wh_07",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 4, 28 ],
+		"verticalStretchAreas": [ 14, 41 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 1,
+		"leftWidth": 1,
+		"bottomHeight": 1,
+		"topHeight": 1,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_31-10-bl": {
+		"region": "square_wh_31",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 11, 89 ],
+		"verticalStretchAreas": [ 18, 37, 46, 62, 71, 87 ],
+		"tiling": false,
+		"minWidth": 101,
+		"minHeight": 101,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_27-10-bl": {
+		"region": "square_wh_27",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 29, 71 ],
+		"verticalStretchAreas": [ 35, 54, 61, 85 ],
+		"tiling": false,
+		"minWidth": 101,
+		"minHeight": 101,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_30-10-bl": {
+		"region": "square_wh_30",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 24, 76 ],
+		"verticalStretchAreas": [ 34, 67 ],
+		"tiling": false,
+		"minWidth": 101,
+		"minHeight": 101,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_09-10-bl": {
+		"region": "square_wh_09",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 1, 31 ],
+		"verticalStretchAreas": [ 13, 37 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_08-10-bl": {
+		"region": "square_wh_08",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 6, 37 ],
+		"verticalStretchAreas": [ 6, 38 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_10-10-bl": {
+		"region": "square_wh_10",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 8, 36 ],
+		"verticalStretchAreas": [ 7, 36 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 44,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_11-10-bl": {
+		"region": "square_wh_11",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 7, 36 ],
+		"verticalStretchAreas": [ 8, 37 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_01-10-bl-tiled": {
+		"region": "square_wh_01",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 0, 40 ],
+		"verticalStretchAreas": [ 4, 44 ],
+		"tiling": true,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_02-10-bl": {
+		"region": "square_wh_02",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 17, 25 ],
+		"verticalStretchAreas": [ 17, 26 ],
+		"tiling": false,
+		"minWidth": 44,
+		"minHeight": 44,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_28-10-bl": {
+		"region": "square_wh_28",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 4, 10, 22, 46, 56, 67, 78, 87 ],
+		"verticalStretchAreas": [ 13, 37, 52, 90 ],
+		"tiling": false,
+		"minWidth": 101,
+		"minHeight": 101,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_29-10-bl": {
+		"region": "square_wh_29",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 50, 50 ],
+		"verticalStretchAreas": [ 50, 50 ],
+		"tiling": false,
+		"minWidth": 101,
+		"minHeight": 101,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_17-10-bl": {
+		"region": "square_wh_17",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 0, 44 ],
+		"verticalStretchAreas": [ 0, 44 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_16-10-bl": {
+		"region": "square_wh_16",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 9, 34 ],
+		"verticalStretchAreas": [ 10, 35 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_22-10-bl": {
+		"region": "square_wh_22",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 9, 35 ],
+		"verticalStretchAreas": [ 2, 43 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"frame_cl_156-10-bl": {
+		"region": "frame_cl_156",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 19, 57, 143, 181 ],
+		"verticalStretchAreas": [ 21, 38 ],
+		"tiling": false,
+		"minWidth": 202,
+		"minHeight": 60,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"frame_cl_162-10-bl": {
+		"region": "frame_cl_162",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 130, 170 ],
+		"verticalStretchAreas": [ 24, 29 ],
+		"tiling": false,
+		"minWidth": 207,
+		"minHeight": 59,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"frame_cl_162-10-gr": {
+		"region": "frame_cl_162",
+		"color": "Gray",
+		"horizontalStretchAreas": [ 130, 170 ],
+		"verticalStretchAreas": [ 24, 29 ],
+		"tiling": false,
+		"minWidth": 207,
+		"minHeight": 59,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_36-10-bl": {
+		"region": "square_wh_36",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 12, 27 ],
+		"verticalStretchAreas": [ 17, 32 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_04-10-bl": {
+		"region": "square_wh_04",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 9, 40 ],
+		"verticalStretchAreas": [ 17, 24 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"frame_cl_158-10-bl": {
+		"region": "frame_cl_158",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 15, 198 ],
+		"verticalStretchAreas": [ 18, 51 ],
+		"tiling": false,
+		"minWidth": 214,
+		"minHeight": 69,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_32-10-bl": {
+		"region": "square_wh_32",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 22, 22 ],
+		"verticalStretchAreas": [ 22, 22 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"frame_cl_150-10-bl": {
+		"region": "frame_cl_150",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 101, 101 ],
+		"verticalStretchAreas": [ 29, 29 ],
+		"tiling": false,
+		"minWidth": 202,
+		"minHeight": 59,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_38-10-bl": {
+		"region": "square_wh_38",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 11, 33 ],
+		"verticalStretchAreas": [ 9, 35 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_40-10-bl": {
+		"region": "square_wh_40",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 18, 42 ],
+		"verticalStretchAreas": [ 2, 34 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_15-10-bl": {
+		"region": "square_wh_15",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 12, 32 ],
+		"verticalStretchAreas": [ 13, 31 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_14-10-bl": {
+		"region": "square_wh_14",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 17, 29 ],
+		"verticalStretchAreas": [ 17, 30 ],
+		"tiling": false,
+		"minWidth": 47,
+		"minHeight": 48,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_13-10-bl": {
+		"region": "square_wh_13",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 11, 30 ],
+		"verticalStretchAreas": [ 13, 28 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_12-10-bl": {
+		"region": "square_wh_12",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 11, 33 ],
+		"verticalStretchAreas": [ 12, 34 ],
+		"tiling": false,
+		"minWidth": 46,
+		"minHeight": 46,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_06-10-bl": {
+		"region": "square_wh_06",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 9, 33 ],
+		"verticalStretchAreas": [ 5, 34 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_05-10-bl": {
+		"region": "square_wh_05",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 11, 31 ],
+		"verticalStretchAreas": [ 20, 23 ],
+		"tiling": false,
+		"minWidth": 44,
+		"minHeight": 44,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"square_wh_03-10-bl": {
+		"region": "square_wh_03",
+		"color": "SafehouseBlueMid",
+		"horizontalStretchAreas": [ 0, 44 ],
+		"verticalStretchAreas": [ 0, 44 ],
+		"tiling": false,
+		"minWidth": 45,
+		"minHeight": 45,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"frame_cl_158-10-gr": {
+		"region": "frame_cl_158",
+		"color": "Gray",
+		"horizontalStretchAreas": [ 15, 198 ],
+		"verticalStretchAreas": [ 18, 51 ],
+		"tiling": false,
+		"minWidth": 214,
+		"minHeight": 69,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	}
+},
+"ButtonStyle": {
+	"default": {
+		"up": "square_wh_21-10-bl",
+		"down": "square_wh_21-10-dkbl",
+		"over": "square_wh_21-10-ltbl",
+		"disabled": "square_wh_21-10-gr",
+		"pressedOffsetY": -1
+	},
+	"round": {
+		"up": "circle_wh_19-bl",
+		"down": "circle_wh_19-dkbl",
+		"over": "circle_wh_19-ltbl",
+		"disabled": "circle_wh_19-gr",
+		"pressedOffsetY": -1
+	}
+},
+"CheckBoxStyle": {
+	"default": {
+		"checkboxOn": "square_wh_17-10-bl",
+		"checkboxOff": "square_wh_22-10-bl",
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray"
+	}
+},
+"ImageButtonStyle": {
+	"default": {
+		"imageUp": "GreenFireButton",
+		"imageDown": "RedFireButton",
+		"pressedOffsetY": -2
+	},
+	"RoundAction": {
+		"imageUp": "ButtonGlowBlue",
+		"imageDown": "FireButton",
+		"imageDisabled": "ButtonOff",
+		"pressedOffsetY": -2
+	}
+},
+"ImageTextButtonStyle": {
+	"default": {
+		"font": "tiny-br",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "GrayDark",
+		"pressedOffsetX": 2,
+		"pressedOffsetY": 1
+	}
+},
+"LabelStyle": {
+	"default": {
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"small-br": {
+		"font": "small-br",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"med-br": {
+		"font": "med-br",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"title-ethit-brd-shd": {
+		"font": "title-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"subtitle-br-brd-shd": {
+		"font": "subtitle-br-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"large-ethit-brd-shd": {
+		"font": "large-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"med-ethit-brd-shd": {
+		"font": "med-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"small-eth": {
+		"font": "small-eth",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"tooltip_dark": {
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueDark"
+	},
+	"tooltip_light": {
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueVeryLight"
+	},
+	"large-br": {
+		"font": "large-br",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"small-br-brd-shd": {
+		"font": "small-br-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"med-br-brd-shd": {
+		"font": "med-br-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"large-br-brd-shd": {
+		"font": "large-br-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"title-br-brd-shd": {
+		"font": "title-br-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"tiny-br": {
+		"font": "tiny-br",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"tiny-eth": {
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"subtitle-ethit-brd-shd": {
+		"font": "subtitle-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid"
+	},
+	"title-br-brd-shd-fr": {
+		"font": "title-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"subtitle-br-brd-shd-fr": {
+		"font": "subtitle-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"large-br-brd-shd-fr": {
+		"font": "large-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"med-br-brd-shd-fr": {
+		"font": "med-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"small-br-brd-shd-fr": {
+		"font": "small-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"small-ethit-brd-shd-fr": {
+		"font": "small-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"med-ethit-brd-shd-fr": {
+		"font": "med-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"large-ethit-brd-shd-fr": {
+		"font": "large-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	},
+	"subtitle-ethit-brd-shd-fr": {
+		"font": "subtitle-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"background": "frame_cl_158-10-bl"
+	}
+},
+"ListStyle": {
+	"default": {
+		"font": "tiny-br",
+		"fontColorSelected": "SafehouseBlueMid",
+		"fontColorUnselected": "SafehouseBlueLight",
+		"selection": "square_wh_14-10-bl",
+		"background": "square_wh_22-10-bl"
+	}
+},
+"ProgressBarStyle": {
+	"default-horizontal": {
+		"background": "slider-simple-background",
+		"knob": "progress-simple-knob",
+		"knobBefore": "progress-simple-knob"
+	},
+	"default-vertical": {
+		"background": "slider-simple-vertical-background",
+		"knob": "progress-simple-vertical-knob",
+		"knobBefore": "progress-simple-vertical-knob"
+	},
+	"loading-horizontal": {
+		"background": "progress-bar-bl-01-empty",
+		"knobBefore": "progress-bar-bl-01-full-tiled"
+	}
+},
+"ScrollPaneStyle": {
+	"default": {
+		"background": "square_wh_36-10-bl",
+		"corner": "square_wh_02-10-bl",
+		"hScroll": "scroll-bar-horizontal",
+		"hScrollKnob": "scroll-bar-horizontal-knob",
+		"vScroll": "scroll-bar-vertical",
+		"vScrollKnob": "scroll-bar-vertical-knob"
+	}
+},
+"SelectBoxStyle": {
+	"default": {
+		"font": "tiny-br",
+		"fontColor": "SafehouseBlueMid",
+		"disabledFontColor": "Gray",
+		"background": "square_wh_07-10-bl",
+		"scrollStyle": "default",
+		"listStyle": "default",
+		"backgroundOpen": "square_wh_22-10-bl"
+	}
+},
+"SliderStyle": {
+	"default-horizontal": {
+		"background": "slider-simple-background",
+		"knob": "slider-simple-knob"
+	},
+	"default-vertical": {
+		"background": "slider-simple-vertical-background",
+		"knob": "slider-simple-vertical-knob"
+	}
+},
+"TextButtonStyle": {
+	"default": {
+		"font": "tiny-br",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan"
+	},
+	"small-ethit-brd-shd": {
+		"font": "small-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueVeryLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan"
+	},
+	"med-ethit-brd-shd": {
+		"font": "med-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"large-ethit-brd-shd": {
+		"font": "large-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"title-ethit-brd-shd": {
+		"font": "title-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"subtitle-ethit-brd-shd": {
+		"font": "subtitle-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"sm-br-brd-shd": {
+		"font": "small-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan"
+	},
+	"med-br-brd-shd": {
+		"font": "med-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetY": -1
+	},
+	"large-br-brd-shd": {
+		"font": "large-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetY": -1
+	},
+	"title-br-brd-shd": {
+		"font": "title-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetY": -1
+	},
+	"med-br-brd-shd-fr": {
+		"font": "med-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetY": -2
+	},
+	"large-br-brd-shd-fr": {
+		"font": "large-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetY": -2
+	},
+	"small-br-brd-shd-fr": {
+		"font": "small-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetY": -2
+	},
+	"title-br-brd-shd-fr": {
+		"font": "title-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetY": -2
+	},
+	"tiny-br-fr": {
+		"font": "tiny-br",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetY": -2
+	},
+	"subtitle-br-brd-shd": {
+		"font": "subtitle-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"subtitle-br-brd-shd-fr": {
+		"font": "subtitle-br-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"title-ethit-brd-shd-fr": {
+		"font": "title-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"subtitle-ethit-brd-shd-fr": {
+		"font": "subtitle-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"large-ethit-brd-shd-fr": {
+		"font": "large-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"med-ethit-brd-shd-fr": {
+		"font": "med-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"small-ethit-brd-shd-fr": {
+		"font": "small-ethit-brd-shd",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetX": 4,
+		"pressedOffsetY": -2
+	},
+	"tiny-eth-fr": {
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueMid",
+		"downFontColor": "SafehouseBlueDark",
+		"overFontColor": "SafehouseBlueLight",
+		"focusedFontColor": "SafehouseBlueVeryLight",
+		"disabledFontColor": "Gray",
+		"checkedFontColor": "DiscWarsOrange",
+		"checkedDownFontColor": "DiscWarsBrownDark",
+		"checkedOverFontColor": "DiscWarsYellow",
+		"checkedFocusedFontColor": "DiscWarsTan",
+		"up": "frame_cl_162-10-bl",
+		"disabled": "frame_cl_162-10-gr",
+		"pressedOffsetY": -2
+	}
+},
+"TextFieldStyle": {
+	"default": {
+		"font": "tiny-eth",
+		"fontColor": "SafehouseBlueMid",
+		"focusedFontColor": "EndOfLineBlueVeryLight",
+		"disabledFontColor": "DiscWarsTan"
+	}
+},
+"TextTooltipStyle": {
+	"default": {
+		"label": "small-br-brd-shd",
+		"background": "square_wh_18-10-bl"
+	}
+},
+"TouchpadStyle": {
+	"default": {
+		"background": "TouchDirectionOn_200x200",
+		"knob": "TouchBall_66x66"
+	},
+	"disabled": {
+		"background": "TouchDirectionOff_200x200",
+		"knob": "TouchBall_66x66"
+	}
+},
+"TreeStyle": {
+	"default": {
+		"plus": "plus-bl",
+		"minus": "minus-bl",
+		"plusOver": "plus-ltbl",
+		"minusOver": "minus-ltbl"
+	}
+},
+"WindowStyle": {
+	"default": {
+		"background": "square_wh_27-10-bl",
+		"titleFont": "med-br-brd-shd",
+		"titleFontColor": "SafehouseBlueMid"
+	}
+}
+}

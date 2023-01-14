@@ -1,0 +1,190 @@
+game.png
+	size: 8192, 2048
+	filter: Linear, Linear
+	repeat: none
+Starscape00
+	bounds: 2040, 128, 1020, 1920
+Starscape01
+	bounds: 0, 128, 1020, 1920
+Starscape02
+	bounds: 3060, 128, 1020, 1920
+Starscape03
+	bounds: 1020, 128, 1020, 1920
+enemyBlack1
+	bounds: 4447, 1964, 93, 84
+enemyBlue2
+	bounds: 4080, 1719, 104, 84
+enemyGreen3
+	bounds: 4344, 1964, 103, 84
+enemyRed4
+	bounds: 4540, 1964, 82, 84
+fire00
+	bounds: 4787, 2008, 16, 40
+fire01
+	bounds: 199, 1, 14, 31
+fire02
+	bounds: 143, 0, 14, 32
+fire03
+	bounds: 4936, 2014, 14, 34
+fire04
+	bounds: 185, 1, 14, 31
+fire05
+	bounds: 241, 22, 14, 31
+fire06
+	bounds: 213, 1, 14, 31
+fire07
+	bounds: 4964, 2017, 14, 31
+fire08
+	bounds: 4771, 2008, 16, 40
+fire09
+	bounds: 4755, 2008, 16, 40
+fire10
+	bounds: 4803, 2008, 16, 40
+fire11
+	bounds: 5006, 2017, 14, 31
+fire12
+	bounds: 157, 0, 14, 32
+fire13
+	bounds: 4950, 2014, 14, 34
+fire14
+	bounds: 4992, 2017, 14, 31
+fire15
+	bounds: 171, 1, 14, 31
+fire16
+	bounds: 227, 1, 14, 31
+fire17
+	bounds: 4978, 2017, 14, 31
+fire18
+	bounds: 4089, 1158, 16, 41
+fire19
+	bounds: 4150, 1475, 16, 41
+laserBlue01
+	bounds: 4106, 1313, 9, 54
+laserBlue02
+	bounds: 4819, 2011, 13, 37
+laserBlue03
+	bounds: 4080, 1068, 9, 37
+laserBlue04
+	bounds: 4832, 2011, 13, 37
+laserBlue05
+	bounds: 4089, 1084, 9, 37
+laserBlue06
+	bounds: 4871, 2011, 13, 37
+laserBlue07
+	bounds: 4115, 1387, 9, 37
+laserBlue08
+	bounds: 4080, 1461, 48, 46
+laserBlue09
+	bounds: 4622, 2002, 48, 46
+laserBlue10
+	bounds: 4080, 1424, 37, 37
+laserBlue11
+	bounds: 4128, 1516, 38, 37
+laserBlue12
+	bounds: 4184, 1746, 13, 57
+laserBlue13
+	bounds: 4080, 1142, 9, 57
+laserBlue14
+	bounds: 4197, 1746, 13, 57
+laserBlue15
+	bounds: 4169, 1578, 9, 57
+laserBlue16
+	bounds: 4128, 1462, 13, 54
+laserGreen01
+	bounds: 4224, 1912, 37, 38
+laserGreen02
+	bounds: 4080, 1253, 13, 57
+laserGreen03
+	bounds: 4093, 1256, 9, 57
+laserGreen04
+	bounds: 4923, 2011, 13, 37
+laserGreen05
+	bounds: 4115, 1350, 9, 37
+laserGreen06
+	bounds: 4080, 1367, 13, 57
+laserGreen07
+	bounds: 4093, 1199, 9, 57
+laserGreen08
+	bounds: 4858, 2011, 13, 37
+laserGreen09
+	bounds: 4117, 1424, 9, 37
+laserGreen10
+	bounds: 4093, 1313, 13, 54
+laserGreen11
+	bounds: 4141, 1462, 9, 54
+laserGreen12
+	bounds: 4910, 2011, 13, 37
+laserGreen13
+	bounds: 4102, 1222, 9, 37
+laserGreen14
+	bounds: 4080, 1507, 48, 46
+laserGreen15
+	bounds: 4670, 2002, 48, 46
+laserGreen16
+	bounds: 4622, 1965, 37, 37
+laserRed01
+	bounds: 4102, 1259, 9, 54
+laserRed02
+	bounds: 4845, 2011, 13, 37
+laserRed03
+	bounds: 4115, 1313, 9, 37
+laserRed04
+	bounds: 4884, 2011, 13, 37
+laserRed05
+	bounds: 4080, 1105, 9, 37
+laserRed06
+	bounds: 4897, 2011, 13, 37
+laserRed07
+	bounds: 4089, 1121, 9, 37
+laserRed08
+	bounds: 452, 82, 48, 46
+laserRed09
+	bounds: 500, 82, 48, 46
+laserRed10
+	bounds: 4718, 2012, 37, 36
+laserRed11
+	bounds: 548, 91, 37, 37
+laserRed12
+	bounds: 4080, 1310, 13, 57
+laserRed13
+	bounds: 4210, 1746, 9, 57
+laserRed14
+	bounds: 4093, 1367, 13, 57
+laserRed15
+	bounds: 4106, 1367, 9, 57
+laserRed16
+	bounds: 4080, 1199, 13, 54
+meteorBrown_big1
+	bounds: 4080, 1635, 101, 84
+meteorBrown_big2
+	bounds: 4224, 1950, 120, 98
+meteorBrown_big3
+	bounds: 4080, 1553, 89, 82
+meteorBrown_big4
+	bounds: 143, 32, 98, 96
+pill_red
+	bounds: 4690, 1981, 22, 21
+playerShip1_orange
+	bounds: 353, 53, 99, 75
+playerShip2_blue
+	bounds: 241, 53, 112, 75
+powerupBlue_bolt
+	bounds: 4261, 1917, 34, 33
+shield1
+	bounds: 4080, 1803, 133, 108
+shield2
+	bounds: 0, 9, 143, 119
+shield3
+	bounds: 4080, 1911, 144, 137
+shield_silver
+	bounds: 585, 98, 30, 30
+speed
+	bounds: 4213, 1803, 7, 108
+star1
+	bounds: 4184, 1722, 25, 24
+star2
+	bounds: 452, 58, 25, 24
+star3
+	bounds: 4295, 1926, 24, 24
+star_gold
+	bounds: 4659, 1972, 31, 30
