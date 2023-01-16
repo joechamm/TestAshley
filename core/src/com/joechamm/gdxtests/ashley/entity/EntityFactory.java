@@ -14,13 +14,16 @@ import com.joechamm.gdxtests.ashley.component.BackgroundComponent;
 import com.joechamm.gdxtests.ashley.component.BoundaryComponent;
 import com.joechamm.gdxtests.ashley.component.CollisionComponent;
 import com.joechamm.gdxtests.ashley.component.EnemyComponent;
+import com.joechamm.gdxtests.ashley.component.EnemyOwnedComponent;
 import com.joechamm.gdxtests.ashley.component.LaserCannonComponent;
 import com.joechamm.gdxtests.ashley.component.LaserComponent;
 import com.joechamm.gdxtests.ashley.component.MovementComponent;
 import com.joechamm.gdxtests.ashley.component.PlayerComponent;
+import com.joechamm.gdxtests.ashley.component.PlayerOwnedComponent;
 import com.joechamm.gdxtests.ashley.component.ShieldComponent;
 import com.joechamm.gdxtests.ashley.component.ShipComponent;
 import com.joechamm.gdxtests.ashley.component.StateComponent;
+import com.joechamm.gdxtests.ashley.component.TakesLaserDamageComponent;
 import com.joechamm.gdxtests.ashley.component.TextureComponent;
 import com.joechamm.gdxtests.ashley.component.TransformComponent;
 import com.joechamm.gdxtests.ashley.component.TypeComponent;
@@ -126,13 +129,14 @@ public class EntityFactory {
         return laserEntity;
     }
 
-    public Entity createShield ( Entity shieldOwner, float shieldStrength, float shieldRadiusPixels,
+    public Entity createShield ( Entity shieldOwner, boolean ownerTypePlayer, float shieldStrength, float shieldRadiusPixels,
                                   float offsetPixelsX, float offsetPixelsY, TextureRegion shieldTex ) {
         Entity shieldEntity = engine.createEntity ();
 
         BoundaryComponent boundaryComponent = engine.createComponent ( BoundaryComponent.class );
         ShieldComponent shieldComponent = engine.createComponent ( ShieldComponent.class );
         StateComponent stateComponent = engine.createComponent ( StateComponent.class );
+        TakesLaserDamageComponent takesLaserDamageComponent = engine.createComponent ( TakesLaserDamageComponent.class );
         TextureComponent textureComponent = engine.createComponent ( TextureComponent.class );
         TransformComponent transformComponent = engine.createComponent ( TransformComponent.class );
         TypeComponent typeComponent = engine.createComponent ( TypeComponent.class );
@@ -154,9 +158,16 @@ public class EntityFactory {
         shieldEntity.add ( boundaryComponent )
                     .add ( shieldComponent )
                     .add ( stateComponent )
+                    .add ( takesLaserDamageComponent )
                     .add ( textureComponent )
                     .add ( transformComponent )
                     .add ( typeComponent );
+
+        if ( ownerTypePlayer ) {
+            shieldEntity.add ( engine.createComponent ( PlayerOwnedComponent.class ) );
+        } else {
+            shieldEntity.add ( engine.createComponent ( EnemyOwnedComponent.class ) );
+        }
 
         engine.addEntity ( shieldEntity );
 
@@ -177,6 +188,7 @@ public class EntityFactory {
         LaserCannonComponent laserCannonComponent = engine.createComponent ( LaserCannonComponent.class );
         MovementComponent movementComponent = engine.createComponent ( MovementComponent.class );
         PlayerComponent playerComponent = engine.createComponent ( PlayerComponent.class );
+        PlayerOwnedComponent playerOwnedComponent = engine.createComponent ( PlayerOwnedComponent.class );
         ShipComponent shipComponent = engine.createComponent ( ShipComponent.class );
         StateComponent stateComponent = engine.createComponent ( StateComponent.class );
         TextureComponent textureComponent = engine.createComponent ( TextureComponent.class );
@@ -199,7 +211,7 @@ public class EntityFactory {
         shipComponent.maxSpeed = shipSpeedMeters;
         shipComponent.shipType = ShipComponent.Type.PLAYER_SHIP;
         shipComponent.hullPoints = shipHullPoints;
-        shipComponent.shield = createShield ( playerShipEntity,
+        shipComponent.shield = createShield ( playerShipEntity, true,
                                               shieldStrength, shieldRadiusPixels,
                                               0f, 0f, shieldTex );
 
@@ -219,6 +231,7 @@ public class EntityFactory {
                         .add ( laserCannonComponent )
                         .add ( movementComponent )
                         .add ( playerComponent )
+                        .add ( playerOwnedComponent )
                         .add ( shipComponent )
                         .add ( stateComponent )
                         .add ( textureComponent )
@@ -244,6 +257,7 @@ public class EntityFactory {
         BoundaryComponent boundaryComponent = engine.createComponent ( BoundaryComponent.class );
         CollisionComponent collisionComponent = engine.createComponent ( CollisionComponent.class );
         EnemyComponent enemyComponent = engine.createComponent ( EnemyComponent.class );
+        EnemyOwnedComponent enemyOwnedComponent = engine.createComponent ( EnemyOwnedComponent.class );
         LaserCannonComponent laserCannonComponent = engine.createComponent ( LaserCannonComponent.class );
         MovementComponent movementComponent = engine.createComponent ( MovementComponent.class );
         ShipComponent shipComponent = engine.createComponent ( ShipComponent.class );
@@ -268,7 +282,9 @@ public class EntityFactory {
         shipComponent.maxSpeed = shipSpeedMeters;
         shipComponent.shipType = ShipComponent.Type.ENEMY_SHIP;
         shipComponent.hullPoints = shipHullPoints;
-        shipComponent.shield = createShield ( enemyShipEntity, shieldStrength, shieldRadiusPixels, 0f, 0f, shieldTexture );
+        shipComponent.shield = createShield ( enemyShipEntity, false,
+                                              shieldStrength, shieldRadiusPixels,
+                                              0f, 0f, shieldTexture );
 
         stateComponent.set ( StateComponent.STATE_NORMAL );
 
@@ -284,6 +300,7 @@ public class EntityFactory {
                        .add ( boundaryComponent )
                        .add ( collisionComponent )
                        .add ( enemyComponent )
+                       .add ( enemyOwnedComponent )
                        .add ( laserCannonComponent )
                        .add ( movementComponent )
                        .add ( shipComponent )

@@ -54,7 +54,6 @@ public class CollisionSystem extends IteratingSystem {
 
         TypeComponent thisType = entity.getComponent ( TypeComponent.class );
 
-        Bits bits = new Bits ();
 
 
         // TODO

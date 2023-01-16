@@ -37,6 +37,7 @@ public class BoundaryUpdateSystem extends IteratingSystem {
      */
     BoundaryUpdateSystem ( Family family ) {
         super ( family );
+        updateWorldBounds ();
     }
 
     public BoundaryUpdateSystem() {
