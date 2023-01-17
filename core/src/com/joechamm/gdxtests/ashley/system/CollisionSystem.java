@@ -3,15 +3,9 @@ package com.joechamm.gdxtests.ashley.system;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.systems.IteratingSystem;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.utils.Bits;
 import com.joechamm.gdxtests.ashley.component.CollisionComponent;
-import com.joechamm.gdxtests.ashley.component.LaserComponent;
 import com.joechamm.gdxtests.ashley.component.Mappers;
-import com.joechamm.gdxtests.ashley.component.PlayerComponent;
 import com.joechamm.gdxtests.ashley.component.TypeComponent;
-
-import com.badlogic.gdx.utils.QuadTreeFloat;
 
 /**
  * File:    CollisionSystem
@@ -48,7 +42,7 @@ public class CollisionSystem extends IteratingSystem {
     @Override
     protected void processEntity ( Entity entity, float deltaTime ) {
         // get collision for this entity
-        CollisionComponent collisionComponent = Mappers.collCM.get ( entity );
+        CollisionComponent collisionComponent = Mappers.collisionCM.get ( entity );
         // get collided entity
         Entity collidedEntity = collisionComponent.collisionEntity;
 

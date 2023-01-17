@@ -103,8 +103,8 @@ public class RenderingSystem extends SortedIteratingSystem {
             // loop through each entity in our render queue
             for ( Entity entity : renderQueue ) {
 
-                TextureComponent tex = Mappers.textCM.get ( entity );
-                TransformComponent t = Mappers.tranCM.get ( entity );
+                TextureComponent tex = Mappers.textureCM.get ( entity );
+                TransformComponent t = Mappers.transformCM.get ( entity );
 
                 if ( tex.region == null || t.isHidden ) {
                     continue;
@@ -156,7 +156,7 @@ public class RenderingSystem extends SortedIteratingSystem {
 
         @Override
         public int compare(Entity e1, Entity e2) {
-            return (int) Math.signum ( Mappers.tranCM.get ( e1 ).screenPositionPixels.z - Mappers.tranCM.get ( e2 ).screenPositionPixels.z );
+            return (int) Math.signum ( Mappers.transformCM.get ( e1 ).screenPositionPixels.z - Mappers.transformCM.get ( e2 ).screenPositionPixels.z );
         }
     }
 }

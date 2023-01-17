@@ -77,8 +77,8 @@ public class BoundaryUpdateSystem extends IteratingSystem {
     @Override
     protected void processEntity ( Entity entity, float deltaTime ) {
 
-        TransformComponent xfrm = Mappers.tranCM.get ( entity );
-        BoundaryComponent bounds = Mappers.bounCM.get ( entity );
+        TransformComponent xfrm = Mappers.transformCM.get ( entity );
+        BoundaryComponent bounds = Mappers.boundaryCM.get ( entity );
 
         bounds.boundingBoxPixels.x = xfrm.screenPositionPixels.x - 0.5f * bounds.boundingBoxPixels.width;
         bounds.boundingBoxPixels.y = xfrm.screenPositionPixels.y - 0.5f * bounds.boundingBoxPixels.height;

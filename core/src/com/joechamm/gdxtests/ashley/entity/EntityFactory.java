@@ -7,8 +7,12 @@ import static com.joechamm.gdxtests.ashley.Constants.PLAYER_STARTING_LIVES;
 
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.PooledEngine;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.controllers.Controller;
+import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.joechamm.gdxtests.ashley.component.AnimationComponent;
 import com.joechamm.gdxtests.ashley.component.BackgroundComponent;
 import com.joechamm.gdxtests.ashley.component.BoundaryComponent;
@@ -17,8 +21,10 @@ import com.joechamm.gdxtests.ashley.component.EnemyComponent;
 import com.joechamm.gdxtests.ashley.component.EnemyOwnedComponent;
 import com.joechamm.gdxtests.ashley.component.LaserCannonComponent;
 import com.joechamm.gdxtests.ashley.component.LaserComponent;
+import com.joechamm.gdxtests.ashley.component.Mappers;
 import com.joechamm.gdxtests.ashley.component.MovementComponent;
 import com.joechamm.gdxtests.ashley.component.PlayerComponent;
+import com.joechamm.gdxtests.ashley.component.PlayerInputComponent;
 import com.joechamm.gdxtests.ashley.component.PlayerOwnedComponent;
 import com.joechamm.gdxtests.ashley.component.ShieldComponent;
 import com.joechamm.gdxtests.ashley.component.ShipComponent;
@@ -37,6 +43,8 @@ import com.joechamm.gdxtests.ashley.component.TypeComponent;
  * Created  1/14/2023 at 12:30 PM
  */
 public class EntityFactory {
+
+    public static final String TAG = EntityFactory.class.getName ();
 
     // ECS ENGINE
     private PooledEngine engine;
@@ -81,7 +89,7 @@ public class EntityFactory {
         return bgEntity;
     }
 
-    public Entity createLaser ( float spawnPixelsX, float spawnPixelsY, float spawnHeadingRads,
+    public Entity createLaser ( float spawnPixelsX, float spawnPixelsY,
                                 float laserWidthPixels, float laserHeightPixels,
                                 LaserComponent.Owner ownerType, LaserCannonComponent laserCannon,
                                 TextureRegion laserTex ) {
@@ -103,7 +111,7 @@ public class EntityFactory {
         laserComponent.damage = laserCannon.laserDamage;
         laserComponent.owner = ownerType;
 
-        movementComponent.velocityMeters.setAngleRad ( spawnHeadingRads );
+        movementComponent.velocityMeters.setAngleRad ( laserCannon.headingRads );
         movementComponent.velocityMeters.scl ( pixelsToMeters ( laserCannon.laserMovementSpeed ) );
 
         stateComponent.set ( StateComponent.STATE_SHOOTING );
@@ -111,7 +119,9 @@ public class EntityFactory {
         transformComponent.screenPositionPixels.set ( spawnPixelsX, spawnPixelsY, 0f );
         transformComponent.scalePixels.x = laserWidthPixels / laserTex.getRegionWidth ();
         transformComponent.scalePixels.y = laserHeightPixels / laserTex.getRegionHeight ();
-        transformComponent.rotation = spawnHeadingRads * radiansToDegrees;
+        transformComponent.rotation = laserCannon.headingRads * radiansToDegrees;
+
+        textureComponent.region = laserTex;
 
         typeComponent.type = TypeComponent.LASER;
 
@@ -312,6 +322,115 @@ public class EntityFactory {
         engine.addEntity ( enemyShipEntity );
 
         return enemyShipEntity;
+    }
+
+    public Entity setPlayerKeyboardInput ( Entity playerShipEntity, int playerIndex ) {
+
+        try {
+            if ( playerShipEntity == null ) {
+                throw new GdxRuntimeException ( "setPlayerKeyboardInput called on null player ship entity" );
+            }
+
+            PlayerInputComponent playerInputComponent = Mappers.playerInputCM.get ( playerShipEntity );
+            if ( playerInputComponent == null ) {
+                playerInputComponent = engine.createComponent ( PlayerInputComponent.class );
+            }
+
+            playerInputComponent.inputType = PlayerInputComponent.Type.INPUT_TYPE_KEYBOARD;
+            playerInputComponent.playerIndex = Math.max ( 0, playerIndex );
+            playerInputComponent.playerShip = playerShipEntity;
+            playerInputComponent.playerController = null;
+            playerShipEntity.add ( playerInputComponent );
+
+            return playerShipEntity;
+
+        } catch ( GdxRuntimeException e ) {
+            Gdx.app.error ( TAG, e.getMessage (), e );
+            return null;
+        }
+
+    }
+
+    public Entity setPlayerTouchInput(Entity playerShipEntity, int playerIndex) {
+        try {
+            if ( playerShipEntity == null ) {
+                throw new GdxRuntimeException ( "setPlayerTouchInput called on null player ship entity" );
+            }
+
+            PlayerInputComponent playerInputComponent = Mappers.playerInputCM.get ( playerShipEntity );
+            if ( playerInputComponent == null ) {
+                playerInputComponent = engine.createComponent ( PlayerInputComponent.class );
+            }
+
+            playerInputComponent.inputType = PlayerInputComponent.Type.INPUT_TYPE_TOUCH;
+            playerInputComponent.playerIndex = Math.max ( 0, playerIndex );
+            playerInputComponent.playerShip = playerShipEntity;
+            playerInputComponent.playerController = null;
+            playerShipEntity.add ( playerInputComponent );
+
+            return playerShipEntity;
+
+        } catch ( GdxRuntimeException e ) {
+            Gdx.app.error ( TAG, e.getMessage (), e );
+            return null;
+        }
+    }
+
+    public Entity setPlayerGamepadInput ( Entity playerShipEntity, int index, Controller controller ) {
+        try {
+            if ( playerShipEntity == null ) {
+                throw new GdxRuntimeException ( "setPlayerGamepadInput called on null player ship entity" );
+            }
+
+            PlayerInputComponent playerInputComponent = Mappers.playerInputCM.get ( playerShipEntity );
+            if ( playerInputComponent == null ) {
+                playerInputComponent = engine.createComponent ( PlayerInputComponent.class );
+            }
+
+            int playerIndex = index;
+            Controller playerController = controller;
+
+            // check to see if we need to acquire the gamepad first // TODO: make sure we're grabbing the right one
+            if ( playerController == null ) {
+                // if the index passed is -1 we grab the current controller, otherwise try for the one at the indicated index
+                if ( playerIndex < 0 ) {
+                    playerController = Controllers.getCurrent ();
+                } else {
+                    playerController = Controllers.getControllers ().get ( playerIndex );
+                }
+            }
+
+            // make sure we were able to get a controller and throw an exception if not
+            if ( playerController == null ) {
+                throw new GdxRuntimeException ( "setPlayerGamepadInput called, but no controllers are available!" );
+            }
+
+            if ( playerController.supportsPlayerIndex () ) {
+                // make sure player index is valid, then set the controller's player index
+                if ( playerIndex < 0 ) {
+                    if ( playerController.getPlayerIndex () == Controller.PLAYER_IDX_UNSET ) {
+                        playerIndex = 0;
+                    } else {
+                        playerIndex = playerController.getPlayerIndex ();
+                    }
+                }
+
+                playerController.setPlayerIndex ( playerIndex );
+            }
+
+            playerInputComponent.playerIndex = Math.max ( 0, playerIndex );
+            playerInputComponent.inputType = PlayerInputComponent.Type.INPUT_TYPE_GAMEPAD;
+            playerInputComponent.playerShip = playerShipEntity;
+            playerInputComponent.playerController = playerController;
+
+            playerShipEntity.add ( playerInputComponent );
+
+            return playerShipEntity;
+
+        } catch ( GdxRuntimeException e ) {
+            Gdx.app.error ( TAG, e.getMessage (), e );
+            return null;
+        }
     }
 
     /**

@@ -50,4 +50,26 @@ public class Constants {
     public static final int PLAYER_STARTING_LIVES = 3;
     public static final float PLAYER_STARTING_HULL_POINTS = 100.0f;
 
+    public static final int PLAYER_LASER_IMAGE_WIDTH_PIXELS = 9;
+    public static final int PLAYER_LASER_IMAGE_HEIGHT_PIXELS = 37;
+    public static final int ENEMY_LASER_IMAGE_WIDTH_PIXELS = 9;
+    public static final int ENEMY_LASER_IMAGE_HEIGHT_PIXELS = 37;
+    public static final int PLAYER_SHIP_IMAGE_WIDTH_PIXELS = 112;
+    public static final int PLAYER_SHIP_IMAGE_HEIGHT_PIXELS = 75;
+    public static final int ENEMY_SHIP_GREEN3_IMAGE_WIDTH_PIXELS = 103;
+    public static final int ENEMY_SHIP_GREEN3_IMAGE_HEIGHT_PIXELS = 84;
+
+    public static final float PLAYER_LASER_SCALE = 0.8f;
+    public static final float PLAYER_SHIP_SCALE = 0.8f;
+    public static final float PLAYER_SHIELD_SCALE = 0.8f;
+    public static final float ENEMY_LASER_SCALE = 0.6f;
+    public static final float ENEMY_SHIP_SCALE = 0.6f;
+    public static final float ENEMY_SHIELD_SCALE = 0.6f;
+
+    public static final float PLAYER_LASER_SPAWN_BOUND_OFFSET_X_PCT = 0.07f;
+    public static final float PLAYER_LASER_SPAWN_BOUND_OFFSET_Y_PCT = 0.45f;
+
+    public static final float ENEMY_LASER_SPAWN_BOUND_OFFSET_X_PCT = 0.18f;
+    public static final float ENEMY_LASER_SPAWN_BOUND_OFFSET_Y_PCT = - 0.5f;
+
 }

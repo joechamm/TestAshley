@@ -5,11 +5,9 @@ import static com.joechamm.gdxtests.ashley.Constants.PIXELS_TO_METERS;
 import static com.joechamm.gdxtests.ashley.Constants.WORLD_HEIGHT_METERS;
 import static com.joechamm.gdxtests.ashley.Constants.WORLD_WIDTH_METERS;
 
-import com.badlogic.ashley.core.Component;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.systems.IteratingSystem;
-import com.badlogic.ashley.utils.ImmutableArray;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
@@ -214,8 +212,8 @@ public class MovementSystem extends IteratingSystem {
 
         final float halfDeltaTimeSquared = 0.5f * deltaTime * deltaTime; // used for position update
 
-        TransformComponent xfrm = Mappers.tranCM.get ( entity );
-        MovementComponent mov = Mappers.moveCM.get ( entity );
+        TransformComponent xfrm = Mappers.transformCM.get ( entity );
+        MovementComponent mov = Mappers.movementCM.get ( entity );
 
         // store the current velocity in a scratch variable
         scratchVec3.set ( mov.velocityMeters, 0f );

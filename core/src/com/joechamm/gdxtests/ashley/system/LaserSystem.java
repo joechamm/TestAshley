@@ -11,17 +11,14 @@ import com.badlogic.ashley.systems.IteratingSystem;
 import com.badlogic.ashley.utils.ImmutableArray;
 import com.badlogic.gdx.math.Rectangle;
 import com.joechamm.gdxtests.ashley.component.BoundaryComponent;
-import com.joechamm.gdxtests.ashley.component.CollisionComponent;
 import com.joechamm.gdxtests.ashley.component.EnemyOwnedComponent;
 import com.joechamm.gdxtests.ashley.component.LaserComponent;
 import com.joechamm.gdxtests.ashley.component.Mappers;
-import com.joechamm.gdxtests.ashley.component.MovementComponent;
 import com.joechamm.gdxtests.ashley.component.PlayerOwnedComponent;
 import com.joechamm.gdxtests.ashley.component.ShieldComponent;
 import com.joechamm.gdxtests.ashley.component.ShipComponent;
 import com.joechamm.gdxtests.ashley.component.StateComponent;
 import com.joechamm.gdxtests.ashley.component.TakesLaserDamageComponent;
-import com.joechamm.gdxtests.ashley.component.TransformComponent;
 import com.joechamm.gdxtests.ashley.component.TypeComponent;
 
 /**
@@ -88,9 +85,9 @@ public class LaserSystem extends IteratingSystem {
     @Override
     protected void processEntity ( Entity entity, float deltaTime ) {
 
-        BoundaryComponent thisBoundary = Mappers.bounCM.get ( entity );
-        LaserComponent laser = Mappers.laseCM.get ( entity );
-        StateComponent thisState = Mappers.statCM.get ( entity );
+        BoundaryComponent thisBoundary = Mappers.boundaryCM.get ( entity );
+        LaserComponent laser = Mappers.laserCM.get ( entity );
+        StateComponent thisState = Mappers.stateCM.get ( entity );
 
         // first check if this laser is offscreen
         if ( !worldBoundsPixels.overlaps ( thisBoundary.boundingBoxPixels ) ) {
@@ -121,8 +118,8 @@ public class LaserSystem extends IteratingSystem {
     }
 
     private void handleEnemyLaser(Entity enemyLaserEntity, float deltaTime) {
-        BoundaryComponent thisBoundary = Mappers.bounCM.get ( enemyLaserEntity );
-        LaserComponent laser = Mappers.laseCM.get ( enemyLaserEntity );
+        BoundaryComponent thisBoundary = Mappers.boundaryCM.get ( enemyLaserEntity );
+        LaserComponent laser = Mappers.laserCM.get ( enemyLaserEntity );
 
         // we want to check all the entities that take laser damage, (maybe don't need this) is a ship or shield, and is not owned by an enemy
         ImmutableArray<Entity> playerOwnedEntities = getEngine ().getEntitiesFor ( Family.all ( TakesLaserDamageComponent.class ).one (
@@ -130,12 +127,12 @@ public class LaserSystem extends IteratingSystem {
 
         for ( Entity otherEntity : playerOwnedEntities ) {
             // first check for collision
-            BoundaryComponent otherBoundary = Mappers.bounCM.get ( otherEntity );
+            BoundaryComponent otherBoundary = Mappers.boundaryCM.get ( otherEntity );
             if ( thisBoundary.boundingBoxPixels.overlaps ( otherBoundary.boundingBoxPixels ) ) {
                 // did we hit a shield or ship?
                 TypeComponent typeComponent = Mappers.typeCM.get ( otherEntity );
                 if ( typeComponent.type == TypeComponent.SHIELD ) {
-                    ShieldComponent otherShield = Mappers.shieCM.get ( otherEntity );
+                    ShieldComponent otherShield = Mappers.shieldCM.get ( otherEntity );
                     if ( otherShield != null &&
                             !otherShield.isDead ) {
                         // TODO: use radius a little better here
@@ -172,8 +169,8 @@ public class LaserSystem extends IteratingSystem {
     }
 
     private void handlePlayerLaser(Entity playerLaserEntity, float deltaTime) {
-        BoundaryComponent thisBoundary = Mappers.bounCM.get ( playerLaserEntity );
-        LaserComponent laser = Mappers.laseCM.get ( playerLaserEntity );
+        BoundaryComponent thisBoundary = Mappers.boundaryCM.get ( playerLaserEntity );
+        LaserComponent laser = Mappers.laserCM.get ( playerLaserEntity );
 
         // we want to check all the entities that take laser damage, (maybe don't need this) is a ship or shield, and is not owned by an enemy
         ImmutableArray<Entity> enemyOwnedEntities = getEngine ().getEntitiesFor ( Family.all ( TakesLaserDamageComponent.class ).one (
@@ -181,12 +178,12 @@ public class LaserSystem extends IteratingSystem {
 
         for ( Entity otherEntity : enemyOwnedEntities ) {
             // first check for collision
-            BoundaryComponent otherBoundary = Mappers.bounCM.get ( otherEntity );
+            BoundaryComponent otherBoundary = Mappers.boundaryCM.get ( otherEntity );
             if ( thisBoundary.boundingBoxPixels.overlaps ( otherBoundary.boundingBoxPixels ) ) {
                 // did we hit a shield or ship?
                 TypeComponent typeComponent = Mappers.typeCM.get ( otherEntity );
                 if ( typeComponent.type == TypeComponent.SHIELD ) {
-                    ShieldComponent otherShield = Mappers.shieCM.get ( otherEntity );
+                    ShieldComponent otherShield = Mappers.shieldCM.get ( otherEntity );
                     if ( otherShield != null &&
                             !otherShield.isDead ) {
                         // TODO: use radius a little better here

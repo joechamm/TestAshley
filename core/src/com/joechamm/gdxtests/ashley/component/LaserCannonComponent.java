@@ -1,6 +1,7 @@
 package com.joechamm.gdxtests.ashley.component;
 
 import com.badlogic.ashley.core.Component;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.Pool;
 
 /**
@@ -26,6 +27,12 @@ public class LaserCannonComponent implements
     /** entities that collide with the laser will lose the damage amount from their shield strength/hull points **/
     public float laserDamage = 0f;
 
+    /** did the cannon just shoot? then we need to spawn a laser **/
+    public boolean justFired = false;
+
+    /** heading in game units (radians from 0-2pi) to set the laser's heading **/
+    public float headingRads = 0f;
+
     /** Resets the object for reuse. Object references should be nulled and fields may be set to default values. */
     @Override
     public void reset () {
@@ -33,5 +40,7 @@ public class LaserCannonComponent implements
         timeSinceLastShot = 0f;
         laserMovementSpeed = 0f;
         laserDamage = 0f;
+        justFired = false;
+        headingRads = 0f;
     }
 }

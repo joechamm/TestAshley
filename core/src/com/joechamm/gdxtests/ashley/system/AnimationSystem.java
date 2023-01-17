@@ -43,11 +43,11 @@ public class AnimationSystem extends IteratingSystem {
      */
     @Override
     protected void processEntity ( Entity entity, float deltaTime ) {
-        AnimationComponent animationComponent = Mappers.animCM.get ( entity );
-        StateComponent stateComponent = Mappers.statCM.get ( entity );
+        AnimationComponent animationComponent = Mappers.animationCM.get ( entity );
+        StateComponent stateComponent = Mappers.stateCM.get ( entity );
 
         if ( animationComponent.animations.containsKey ( stateComponent.get () ) ) {
-            TextureComponent textureComponent = Mappers.textCM.get ( entity );
+            TextureComponent textureComponent = Mappers.textureCM.get ( entity );
             textureComponent.region = (TextureRegion) animationComponent.animations.get ( stateComponent.get () )
                                                                                    .getKeyFrame ( stateComponent.time,
                                                                                                   stateComponent.isLooping );
